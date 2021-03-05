@@ -19,6 +19,10 @@
  * Chartist.js plugin to display a data label on top of the points in a line chart.
  *
  */
+// If window Object is undefined, the tooltips does not work.(Server Side Rendering)
+if ('undefined' !== typeof window) {
+  return;
+}
 /* global Chartist */
 (function (window, document, Chartist) {
   'use strict';
