@@ -3,7 +3,7 @@
  *
  */
 // If window Object is undefined, the tooltips does not work.(Server Side Rendering)
-if ('undefined' !== typeof window) {
+if ('undefined' === typeof window) {
   return;
 }
 /* global Chartist */
